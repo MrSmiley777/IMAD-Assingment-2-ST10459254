@@ -84,6 +84,7 @@ Logging of Code and Whole Assignment
 26 April 2024-Main Activity
 -	Made user interface, added images and picked right colours that make the app appealing.
 -	Line 15-18 Coded button to move to interaction screen. 
+
 26 April 2024-Interaction Activity
 -	Made user interface, added images and picked right colours that make the app appealing.
 -	Started coding.
