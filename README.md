@@ -20,27 +20,35 @@ The interaction screen has a relative layout in a similar colour to Bob’s fur 
 I have chosen the Shiba Inu, Bob and have used cute cartoon pictures that are similar to each other to make the application feel better and more professional (for example imagine using this app for a single pet but then the app displays multiple different dog types, it does not make sense and feels very fake). There are 6 pictures in total all depicting Bob and his relative action according to which button is clicked. I chose cute, cartoon pictures as it becomes more appealing to younger ages as this app is meant for that target market.
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/4a5213cf-c48b-47d9-ae9f-aa01a329bb64)
+
 Figure 1. Pillay, G. 2024. Screenshot from Android Studio of user interface of the interaction screen.
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/b441456a-cf65-409f-b4c9-ec49bf2edaf9)
+
 Figure 2. Pillay, G. Screenshot from Android Studio of user interface of the welcome screen.
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/9e72094b-2590-4c34-ab06-1ab859b2e130)
+
 Figure 3. catalyststuff. [s. a.]., Cute shiba inu dog hug cartoon vector icon illustration animal nature icon concept isolated premium (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/6b40e2d7-2901-49eb-806e-ea00f64baa23)
+
 Figure 4. catalyststuff. [s. a.]. Bonito shiba inu sentado desenhos animados ilustração de ícone vetorial conceito de ícone de natureza animal isolado (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/cf8250c3-8e86-4e2e-aee5-ca456d140dea)
+
 Figure 5. catalyststuff. [s. a.]. Cute cool shiba inu dog playing skateboard cartoon vector icon ilustración. deporte animal aislado (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/263e0200-e311-42ae-9dd7-561bb34d6514)
+
 Figure 6. catalyststuff. [s. a.]. Cachorro shiba inu fofo comendo sushi cartoon (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/5436e96c-5cdf-462e-87ad-a0016fcdb1a3)
+
 Figure 7. catalyststuff. [s. a.]. Cute shiba inu bathing shower in bathtub cartoon vector illustration. animal love concept isolated vector. flat cartoon (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/d6bde6b0-40c7-401f-b827-11671926378b)
+
 Figure 8. catalyststuff. [s. a.]. Cute shiba inu celebrating cartoon vector icon illustration animal nature icon concept isolated (Freepik, n.d.)
 
 Coding Design
@@ -50,6 +58,7 @@ Which my application accomplishes. It is fluent in how it works. The user can cl
 Each time a button is clicked the stat is increased by 5 and a picture is displayed related to the button clicked unless it is already at 100 at which a relative message will pop up telling the user why they can no longer increase the stat and a picture of Bob waiting will be shown as he no longer can perform the action of the button. Additionally, if all stats are at 100 then the picture will change to Bob celebrating. Each button have basically the same code with slight differences depending on the action they are responsible for.
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/e3450585-3f77-4099-8eeb-787815bdead9)
+
 Figure 9. Pillay, G. 2024. Screenshot displaying the feed button on click code.
 
 What about user error? We must ensure that if the user makes an error, it should not break the program and that an error message should be displayed to correct the user.
