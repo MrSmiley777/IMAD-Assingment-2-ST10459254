@@ -12,7 +12,9 @@ General function of Application
 
 The user opens the application and sees the welcome screen, in which the user will see a picture of bob welcoming the user and a button to continue to the next page.
 
-When the user clicks on the button, it will take them to the next page with 3 buttons a picture of bob waiting and the stats, hunger, cleanliness and happiness. Every time the user clicks one of the buttons (one button for feeding, a button for cleaning and a button for playing with Bob) it changes the picture depending on the number of the stats. All the stats go up to a maximum of 100, each time the button is clicked 5 is added to the stat (default stat is 0), and while the stat is less than 100 the picture changes according to which button is clicked, if feed is clicked than a picture of Bob eating is shown, if the stat reaches 100 and is clicked then a picture of Bob waiting is shown, also a pop up message will tell the user if Bob is full, clean or tired of playing. When all the stats reach 100, any buttons clicked will show a picture of Bob celebrating and a pop up message will be shown in relation to it.  
+When the user clicks on the button, it will take them to the next page with 3 buttons a picture of bob waiting and the stats, hunger, cleanliness and happiness. Every time the user clicks one of the buttons (one button for feeding, a button for cleaning and a button for playing with Bob) it changes the picture depending on the number of the stats. All the stats go up to a maximum of 100, each time the button is clicked 5 is added to the stat (default stat is 0), and while the stat is less than 100 the picture changes according to which button is clicked, if feed is clicked than a picture of Bob eating is shown, if the stat reaches 100 and is clicked then a picture of Bob waiting is shown, also a pop up message will tell the user if Bob is full, clean or tired of playing. When all the stats reach 100, any buttons clicked will show a picture of Bob celebrating and a pop up message will be shown in relation to it. 
+
+To simulate Bob becoming hungrier, dirtier and unhappier over time I used two random numbers, if they equaled to each other then Bob's related stat will decrease.
 
 Graphical Design 
 
@@ -24,35 +26,35 @@ I have chosen the Shiba Inu, Bob and have used cute cartoon pictures that are si
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/4a5213cf-c48b-47d9-ae9f-aa01a329bb64)
 
-Figure 1. Pillay, G. 2024. Screenshot from Android Studio of user interface of the interaction screen.
+Figure 1. Pillay, G. 2024. *Screenshot from Android Studio of user interface of the interaction screen.*
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/b441456a-cf65-409f-b4c9-ec49bf2edaf9)
 
-Figure 2. Pillay, G. Screenshot from Android Studio of user interface of the welcome screen.
+Figure 2. Pillay, G. *Screenshot from Android Studio of user interface of the welcome screen.*
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/9e72094b-2590-4c34-ab06-1ab859b2e130)
 
-Figure 3. catalyststuff. [s. a.]., Cute shiba inu dog hug cartoon vector icon illustration animal nature icon concept isolated premium (Freepik, n.d.)
+Figure 3. catalyststuff. [s. a.]. *Cute shiba inu dog hug cartoon vector icon illustration animal nature icon concept isolated premium* (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/6b40e2d7-2901-49eb-806e-ea00f64baa23)
 
-Figure 4. catalyststuff. [s. a.]. Bonito shiba inu sentado desenhos animados ilustração de ícone vetorial conceito de ícone de natureza animal isolado (Freepik, n.d.)
+Figure 4. catalyststuff. [s. a.]. *Bonito shiba inu sentado desenhos animados ilustração de ícone vetorial conceito de ícone de natureza animal isolado* (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/cf8250c3-8e86-4e2e-aee5-ca456d140dea)
 
-Figure 5. catalyststuff. [s. a.]. Cute cool shiba inu dog playing skateboard cartoon vector icon ilustración. deporte animal aislado (Freepik, n.d.)
+Figure 5. catalyststuff. [s. a.]. *Cute cool shiba inu dog playing skateboard cartoon vector icon ilustración. deporte animal aislado* (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/263e0200-e311-42ae-9dd7-561bb34d6514)
 
-Figure 6. catalyststuff. [s. a.]. Cachorro shiba inu fofo comendo sushi cartoon (Freepik, n.d.)
+Figure 6. catalyststuff. [s. a.]. *Cachorro shiba inu fofo comendo sushi cartoon* (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/5436e96c-5cdf-462e-87ad-a0016fcdb1a3)
 
-Figure 7. catalyststuff. [s. a.]. Cute shiba inu bathing shower in bathtub cartoon vector illustration. animal love concept isolated vector. flat cartoon (Freepik, n.d.)
+Figure 7. catalyststuff. [s. a.]. *Cute shiba inu bathing shower in bathtub cartoon vector illustration. animal love concept isolated vector. flat cartoon* (Freepik, n.d.)
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/d6bde6b0-40c7-401f-b827-11671926378b)
 
-Figure 8. catalyststuff. [s. a.]. Cute shiba inu celebrating cartoon vector icon illustration animal nature icon concept isolated (Freepik, n.d.)
+Figure 8. catalyststuff. [s. a.]. *Cute shiba inu celebrating cartoon vector icon illustration animal nature icon concept isolated* (Freepik, n.d.)
 
 Coding Design
 
@@ -60,11 +62,11 @@ The user must be able to enjoy the interface, we covered how it is visually appe
 
 Which my application accomplishes. It is fluent in how it works. The user can clearly see what they need to do: Click the “Continue” button to go to the interaction screen and then clicking the feed, eat or clean buttons to make Bob happy.
 
-Each time a button is clicked the stat is increased by 5 and a picture is displayed related to the button clicked unless it is already at 100 at which a relative message will pop up telling the user why they can no longer increase the stat and a picture of Bob waiting will be shown as he no longer can perform the action of the button. Additionally, if all stats are at 100 then the picture will change to Bob celebrating. Each button have basically the same code with slight differences depending on the action they are responsible for.
+Each time a button is clicked the stat is increased by 5 and a picture is displayed related to the button clicked unless it is already at 100 at which a relative message will pop up telling the user why they can no longer increase the stat and a picture of Bob waiting will be shown as he no longer can perform the action of the button. Additionally, if all stats are at 100 then the picture will change to Bob celebrating. Each button have basically the same code with slight differences depending on the action they are responsible for. Everytime the button is clicked a random number is generated if said number is equal to the random generated number at the start of the program, the stat related to the button is decreased by 5 simulating Bob becoming hungrier, dirtier or cleaner over time.
 
 ![image](https://github.com/MrSmiley777/IMAD-Assingment-2-ST10459254/assets/166629805/e3450585-3f77-4099-8eeb-787815bdead9)
 
-Figure 9. Pillay, G. 2024. Screenshot displaying the feed button on click code.
+Figure 9. Pillay, G. 2024. *Screenshot displaying the feed button on click code.*
 
 What about user error? We must ensure that if the user makes an error, it should not break the program and that an error message should be displayed to correct the user.
 
@@ -88,36 +90,36 @@ Logging of Code and Whole Assignment
 26 April 2024-Interaction Activity
 -	Made user interface, added images and picked right colours that make the app appealing.
 -	Started coding.
--	Line 12-21 Variable declaration.
--	Line 26-34 Assigned variables to components with the “findViewById” method. 
--	Line 36-56 Coded button for feeding.
+-	Line 12-24 Variable declaration.
+-	Line 26-37 Assigned variables to components with the “findViewById” method. 
+-	Line 36-63 Coded button for feeding.
 -	Line 38-56 Image error, I put the if statement for all stats being the same, first under the button which made the image produced wrong. 
--	Line 57-102 Copied code from feed button and made small details related to the button I was doing next.
+-	Line 63-120 Copied code from feed button and made small details related to the button I was doing next and added random number generator for simulation of Bob's stats decreasing.
 -	Code completed.
 
 References
 
-1.	Freepik. [s. a.]. catalyststuff. [Online]. Available at:https://www.freepik.com [Accessed 26 April 2024].
+1.	Freepik. [s. a.]. *catalyststuff.* [Online]. Available at:https://www.freepik.com [Accessed 26 April 2024].
 
 List of figures
 
-Figure 1: Pillay, G. 2024.  Screenshot from Android Studio of user interface of the interaction screen.
+Figure 1: Pillay, G. 2024.  *Screenshot from Android Studio of user interface of the interaction screen.*
 
-Figure 2: Pillay, G. 2024.  Screenshot from Android Studio of user interface of the welcome screen.
+Figure 2: Pillay, G. 2024.  *Screenshot from Android Studio of user interface of the welcome screen.*
 
-Figure 3. catalyststuff. [s. a.]. Cute shiba inu dog hug cartoon vector icon illustration animal nature icon concept isolated premium.
+Figure 3. catalyststuff. [s. a.]. *Cute shiba inu dog hug cartoon vector icon illustration animal nature icon concept isolated premium.*
 
-Figure 4. catalyststuff. [s. a.]. Bonito shiba inu sentado desenhos animados ilustração de ícone vetorial conceito de ícone de natureza animal isolado.
+Figure 4. catalyststuff. [s. a.]. *Bonito shiba inu sentado desenhos animados ilustração de ícone vetorial conceito de ícone de natureza animal isolado.*
 
-Figure 5. catalyststuff. [s. a.]. Cute cool shiba inu dog playing skateboard cartoon vector icon ilustración. deporte animal aislado.
+Figure 5. catalyststuff. [s. a.]. *Cute cool shiba inu dog playing skateboard cartoon vector icon ilustración. deporte animal aislado.*
 
-Figure 6. catalyststuff. [s. a.]. Cachorro shiba inu fofo comendo sushi cartoon.
+Figure 6. catalyststuff. [s. a.]. *Cachorro shiba inu fofo comendo sushi cartoon.*
 
-Figure 7. catalyststuff. [s. a.]. Cute shiba inu bathing shower in bathtub cartoon vector illustration. animal love concept isolated vector. flat cartoon.
+Figure 7. catalyststuff. [s. a.]. *Cute shiba inu bathing shower in bathtub cartoon vector illustration. animal love concept isolated vector. flat cartoon.*
 
-Figure 8. catalyststuff. [s. a.]. Cute shiba inu celebrating cartoon vector icon illustration animal nature icon concept isolated.
+Figure 8. catalyststuff. [s. a.]. *Cute shiba inu celebrating cartoon vector icon illustration animal nature icon concept isolated.*
 
-Figure 9. Pillay, G. 2024. Screenshot displaying the feed button on click code.
+Figure 9. Pillay, G. 2024. *Screenshot displaying the feed button on click code.*
 
 
 
